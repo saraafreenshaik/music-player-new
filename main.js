@@ -116,6 +116,7 @@ function prevTrack() {
   playTrack();
 }
 
+
 // ================= SEEK & VOLUME =================
 function seekTo() {
   const seekto = curr_track.duration * (seek_slider.value / 100);
@@ -125,6 +126,7 @@ function seekTo() {
 function setVolume() {
   curr_track.volume = volume_slider.value / 100;
 }
+
 
 // ================= UPDATE TIME =================
 function seekUpdate() {
@@ -150,6 +152,7 @@ function seekUpdate() {
       .padStart(2, "0")}`;
 }
 
+
 // ================= INIT =================
 loadTrack(track_index);
 
@@ -163,6 +166,7 @@ const playlistEl = document.getElementById('playlist');
 playlistToggle.addEventListener('click', () => {
     playlistSection.classList.toggle('active');
 });
+
 
 // LOAD PLAYLIST ITEMS
 track_list.forEach((track, index) => {
@@ -222,4 +226,5 @@ curr_track.addEventListener('timeupdate', () => {
         }
     });
 });
+
 

@@ -43,7 +43,7 @@ const track_list = [
   {
     name: "Love Your Voice",
     artist: "Jony",
-    image: "shape-of-you.jpeg",
+    image: "love-your-voice.jpg",
     path: "love your voice.mp3"
   },
   {
@@ -222,3 +222,4 @@ curr_track.addEventListener('timeupdate', () => {
         }
     });
 });
+
